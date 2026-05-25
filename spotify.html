@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="spotify.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="left">
+
+            <img src="assets/spotify-162-svgrepo-com.svg" alt="" srcset="" class="logo">
+
+            <img src="assets/home.svg" alt="" class="home-icon">
+
+            <div class="search-bar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill=" #808080" viewBox="0 0 24 24">
+                    <path
+                        d="M10 2a8 8 0 105.293 14.293l4.707 4.707 1.414-1.414-4.707-4.707A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z" />
+                </svg>
+                <input type="text" placeholder="What do you want to play?">
+            </div>
+        </div>
+
+        <div class="right">
+            <a href="#">Premium</a>
+            <a href="#">Support</a>
+            <a href="#">Download</a>
+            <div class="line"></div>
+            <div class="install-app">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 24 24">
+
+                    <path d="M5 20h14v-2H5v2zm7-18v10.17l3.59-3.58L17 10l-5 5-5-5 1.41-1.41L11 12.17V2h1z" />
+
+                </svg>
+                <span>Install App</span>
+            </div>
+
+            <button class="signup-btn">Sign Up</button>
+
+            <button class="login-btn">Log in</button>
+        </div>
+    </nav>
+    <main>
+        <div class="sidebar">
+            <!-- side header -->
+            <div class="side-header">
+                <div class="left-sec"> <span>Your Library</span></div>
+                <div class="right-sec">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
+
+                        <path d="M19 11H13V5h-2v6H5v2h6v6h2v-6h6z" />
+
+                    </svg>
+
+                    <span>Create</span>
+
+                </div>
+            </div>
+            <!-- playlist-card -->
+            <div class="playlist-card">
+                <span class="heading">Create your first playlist</span>
+                <p class="description">It's easy, we'll help you</p>
+                <button class="card-btn">Create Playlist
+                </button>
+            </div>
+            <!-- podcast-card -->
+            <div class="podcast-card">
+                <span class="heading"> Let's find some podcasts to follow</span>
+                <p class="description"> We'll keep you updated on new episodes</p>
+                <button class="card-btn"> Browse Podcasts
+                </button>
+            </div>
+            <!-- footer link  -->
+            <div class="footer">
+                <a href="#"> Legal</a>
+                <a href="#"> Safety & Privacy Center</a>
+                <a href="#"> Privacy Policy</a>
+                <a href="#"> Cookies</a>
+                <a href="#"> About Ads</a>
+                <a href="#"> Accessibility</a>
+                <a href="#" style="color: white;"> Cookies</a>
+            </div>
+            <!-- language button -->
+            <button class="lng-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="white"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+
+                    <circle cx="12" cy="12" r="10"></circle>
+
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+
+                    <path d="M12 2a15 15 0 0 1 0 20"></path>
+
+                    <path d="M12 2a15 15 0 0 0 0 20"></path>
+
+                </svg>
+
+                <span>English</span>
+            </button>
+        </div>
+
+        <div class="main-content">
+            <div class="trending-song">
+                <div class="title">
+                    <span>Trending Songs</span>
+                    <p>Show All</p>
+                </div>
+
+                <div class="songs-card">
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://i.scdn.co/image/ab67616d00001e02db055ba83d3809eec4c86527"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Jackpot</span>
+                        <p>Cheema Y,Gur Sidhu</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://i.scdn.co/image/ab67616d00001e02db055ba83d3809eec4c86527"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Jackpot</span>
+                        <p>Cheema Y,Gur Sidhu</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://i.scdn.co/image/ab67616d00001e02db055ba83d3809eec4c86527"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Jackpot</span>
+                        <p>Cheema Y,Gur Sidhu</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://i.scdn.co/image/ab67616d00001e02db055ba83d3809eec4c86527"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Jackpot</span>
+                        <p>Cheema Y,Gur Sidhu</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://i.scdn.co/image/ab67616d00001e02db055ba83d3809eec4c86527"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Jackpot</span>
+                        <p>Cheema Y,Gur Sidhu</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://i.scdn.co/image/ab67616d00001e02db055ba83d3809eec4c86527"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Jackpot</span>
+                        <p>Cheema Y,Gur Sidhu</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://i.scdn.co/image/ab67616d00001e02db055ba83d3809eec4c86527"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Jackpot</span>
+                        <p>Cheema Y,Gur Sidhu</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://i.scdn.co/image/ab67616d00001e02db055ba83d3809eec4c86527"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Jackpot</span>
+                        <p>Cheema Y,Gur Sidhu</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://i.scdn.co/image/ab67616d00001e02db055ba83d3809eec4c86527"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Jackpot</span>
+                        <p>Cheema Y,Gur Sidhu</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://i.scdn.co/image/ab67616d00001e02db055ba83d3809eec4c86527"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Jackpot</span>
+                        <p>Cheema Y,Gur Sidhu</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://i.scdn.co/image/ab67616d00001e02db055ba83d3809eec4c86527"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Jackpot</span>
+                        <p>Cheema Y,Gur Sidhu</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://i.scdn.co/image/ab67616d00001e02db055ba83d3809eec4c86527"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Jackpot</span>
+                        <p>Cheema Y,Gur Sidhu</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://i.scdn.co/image/ab67616d00001e02db055ba83d3809eec4c86527"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Jackpot</span>
+                        <p>Cheema Y,Gur Sidhu</p>
+                    </div>
+                </div>
+            </div>
+            <!-- popular artist -->
+            <div class="popular-artist">
+                <div class="title">
+                    <span>Popular artists</span>
+                    <p>Show All</p>
+                </div>
+
+                <div class="songs-card">
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy" src="assets/image.png"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Pritam</span>
+                        <p>Artist</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy" src="assets/image.png"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Pritam</span>
+                        <p>Artist</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy" src="assets/image.png"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Pritam</span>
+                        <p>Artist</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy" src="assets/image.png"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Pritam</span>
+                        <p>Artist</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy" src="assets/image.png"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Pritam</span>
+                        <p>Artist</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy" src="assets/image.png"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Pritam</span>
+                        <p>Artist</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy" src="assets/image.png"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Pritam</span>
+                        <p>Artist</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy" src="assets/image.png"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Pritam</span>
+                        <p>Artist</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy" src="assets/image.png"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Pritam</span>
+                        <p>Artist</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy" src="assets/image.png"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Pritam</span>
+                        <p>Artist</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy" src="assets/image.png"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Pritam</span>
+                        <p>Artist</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy" src="assets/image.png"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Pritam</span>
+                        <p>Artist</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy" src="assets/image.png"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Pritam</span>
+                        <p>Artist</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy" src="assets/image.png"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Pritam</span>
+                        <p>Artist</p>
+                    </div>
+                </div>
+            </div>
+            <!-- popular albums -->
+            <div class="trending-song">
+                <div class="title">
+                    <span>Popular albums and singles</span>
+                    <p>Show All</p>
+                </div>
+
+                <div class="songs-card">
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="assets/ab67616d00001e026404721c1943d5069f0805f3.jpg" data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Aashiqui 2</span>
+                        <p>Mithoon,Abkit Tiwari,Jeet Gannguli</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="assets/ab67616d00001e026404721c1943d5069f0805f3.jpg" data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Aashiqui 2</span>
+                        <p>Mithoon,Abkit Tiwari,Jeet Gannguli</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="assets/ab67616d00001e026404721c1943d5069f0805f3.jpg" data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Aashiqui 2</span>
+                        <p>Mithoon,Abkit Tiwari,Jeet Gannguli</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="assets/ab67616d00001e026404721c1943d5069f0805f3.jpg" data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Aashiqui 2</span>
+                        <p>Mithoon,Abkit Tiwari,Jeet Gannguli</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="assets/ab67616d00001e026404721c1943d5069f0805f3.jpg" data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Aashiqui 2</span>
+                        <p>Mithoon,Abkit Tiwari,Jeet Gannguli</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="assets/ab67616d00001e026404721c1943d5069f0805f3.jpg" data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Aashiqui 2</span>
+                        <p>Mithoon,Abkit Tiwari,Jeet Gannguli</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="assets/ab67616d00001e026404721c1943d5069f0805f3.jpg" data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Aashiqui 2</span>
+                        <p>Mithoon,Abkit Tiwari,Jeet Gannguli</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="assets/ab67616d00001e026404721c1943d5069f0805f3.jpg" data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Aashiqui 2</span>
+                        <p>Mithoon,Abkit Tiwari,Jeet Gannguli</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="assets/ab67616d00001e026404721c1943d5069f0805f3.jpg" data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Aashiqui 2</span>
+                        <p>Mithoon,Abkit Tiwari,Jeet Gannguli</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="assets/ab67616d00001e026404721c1943d5069f0805f3.jpg" data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Aashiqui 2</span>
+                        <p>Mithoon,Abkit Tiwari,Jeet Gannguli</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="assets/ab67616d00001e026404721c1943d5069f0805f3.jpg" data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Aashiqui 2</span>
+                        <p>Mithoon,Abkit Tiwari,Jeet Gannguli</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="assets/ab67616d00001e026404721c1943d5069f0805f3.jpg" data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+                        <span>Aashiqui 2</span>
+                        <p>Mithoon,Abkit Tiwari,Jeet Gannguli</p>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- popular radios -->
+            <div class="trending-song">
+                <div class="title">
+                    <span>Popular radio</span>
+                    <p>Show All</p>
+                </div>
+
+                <div class="songs-card">
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy" src="assets/en.jpg"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+
+                        <p>By Spotify</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy" src="assets/en.jpg"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+
+                        <p>By Spotify</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy" src="assets/en.jpg"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+
+                        <p>By Spotify</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy" src="assets/en.jpg"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+
+                        <p>By Spotify</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy" src="assets/en.jpg"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+
+                        <p>By Spotify</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy" src="assets/en.jpg"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+
+                        <p>By Spotify</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy" src="assets/en.jpg"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+
+                        <p>By Spotify</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy" src="assets/en.jpg"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+
+                        <p>By Spotify</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy" src="assets/en.jpg"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+
+                        <p>By Spotify</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy" src="assets/en.jpg"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+
+                        <p>By Spotify</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy" src="assets/en.jpg"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+
+                        <p>By Spotify</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy" src="assets/en.jpg"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+
+                        <p>By Spotify</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy" src="assets/en.jpg"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+
+                        <p>By Spotify</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy" src="assets/en.jpg"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+
+                        <p>By Spotify</p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Featured Charts -->
+            <div class="trending-song">
+                <div class="title">
+                    <span>Featured Charts</span>
+                    <p>Show All</p>
+                </div>
+
+                <div class="songs-card">
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy" src="assets/region_global_default.jpg"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+
+                        <p>Your weekly update</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy" src="assets/region_global_default.jpg"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+
+                        <p>Your weekly update</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy" src="assets/region_global_default.jpg"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+
+                        <p>Your weekly update</p>
+                    </div>
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy" src="assets/region_global_default.jpg"
+                            data-testid="card-image" alt=""
+                            class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP WfGUvErXcmIzJo1c qIwhHcbG780QDz68">
+
+                        <p>Your weekly update</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="sep"></div>
+
+            <!-- FOOTER  -->
+
+            <footer>
+                <div class="column">
+                    <span class="c-heading">Company</span>
+                    <a href="#">About</a>
+                    <a href="#">Jobs</a>
+                    <a href="#">For the Record</a>
+                </div>
+                <div class="column">
+                    <span class="c-heading">Communities</span>
+                    <a href="#">For Artists</a>
+                    <a href="#">Developers</a>
+                    <a href="#">Advertising</a>
+                    <a href="#">Investors</a>
+                    <a href="#">Vebdors</a>
+                </div>
+                <div class="column">
+                    <span class="c-heading">Useful links</span>
+                    <a href="#">Support</a>
+                    <a href="#">Free Mobile App</a>
+                    <a href="#">Popular by Country</a>
+                    <a href="#">Import your music</a>
+                </div>
+                <div class="column">
+                    <span class="c-heading">Spotify Plans</span>
+                    <a href="#">Premium Standard</a>
+                    <a href="#">Premium Platinum</a>
+                    <a href="#">Premium Student</a>
+                    <a href="#">Spotify Free</a>
+                </div>
+
+            </footer>
+            <div class="sep"></div>
+
+            <span class="end">© 2026 Spotify AB</span>
+        </div>
+        </div>
+    </main>
+
+
+
+
+    <script src="spotify.js"></script>
+</body>
+
+</html>

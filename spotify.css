@@ -1,0 +1,507 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+}
+
+/* navbar desing */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 97%;
+
+    background-color: black;
+
+    z-index: 1000;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.logo {
+    width: 2.5rem;
+}
+
+.home-icon {
+    width: 2.5rem;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border-radius: 45px;
+    background-color: #282828;
+    padding: 8px 18px;
+    width: 430px;
+    gap: 1px;
+}
+
+.search-bar input {
+    background: transparent;
+    color: white;
+    border: none;
+    outline: white;
+    font-size: 15px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.right a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #808080;
+    font-weight: 600;
+}
+
+.right .line {
+    width: 2px;
+    height: 35px;
+    background-color: #808080;
+}
+
+.install-app {
+    display: flex;
+    align-items: center;
+}
+
+.install-app span {
+    color: #808080;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.signup-btn {
+    color: #808080;
+    font-size: 13px;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.login-btn {
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* main */
+main {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.sidebar {
+    width: 23%;
+
+    border-radius: 10px;
+    background-color: #0f0f0f;
+
+    padding: 15px 25px;
+
+    position: fixed;
+
+    top: 95px;
+    left: 10px;
+
+    height: calc(100vh - 120px);
+
+    overflow-y: auto;
+}
+
+.side-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-sec {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.right-sec {
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #1f1f1f;
+    ;
+    font-weight: 700;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.playlist-card,
+.podcast-card {
+    border-radius: 10px;
+    padding: 18px;
+    margin-top: 20px;
+    background-color: #1f1f1f;
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+}
+
+.heading {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.description {
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.card-btn {
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    margin-top: 15px;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+.footer {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+    padding: 10px 25px;
+
+}
+
+.footer a {
+    color: rgb(179, 179, 179);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.lng-btn {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    background-color: #121212;
+    font-weight: 700;
+    padding: 4px 15px;
+    border: 0.5px solid white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 15px;
+}
+
+.lng-btn svg {
+    width: 18px;
+    height: 18px;
+}
+
+.main-content {
+    width: 72%;
+
+    margin-left: 28%;
+
+    margin-top: 90px;
+
+    border-radius: 10px;
+    background-color: #0f0f0f;
+
+    padding: 15px 25px;
+}
+
+.trending-song ,.popular-artist{
+    padding: 10px 15px;
+}
+.sidebar::-webkit-scrollbar{
+    display: none;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.title span {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+.title p {
+    font-size: 14px;
+    color: rgb(179, 179, 179);
+    font-weight: 700;
+    cursor: pointer;
+}
+.title p:hover{
+    text-decoration: underline;
+}
+
+.songs-card {
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+}
+
+.songs-card::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    transition: 0.3s;
+    padding: 16px;
+    cursor: pointer;
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+}
+
+.card img {
+    object-fit: cover;
+    width: 160px;
+    height: 160px;
+    border-radius: 10px;
+}
+
+.card span {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+.card p {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(179, 179, 179);
+}
+.card:hover{
+    background-color: #2a2a2a;
+        transform: scale(1.03);
+}
+
+.popular-artist .card img{
+border-radius: 50%;
+}
+
+.sep{
+    width: 100%;
+
+    height: 1px;
+
+    background-color: rgb(106, 106, 106);
+
+    margin: 20px 0;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    color: rgb(255, 255, 255)
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    padding: 24px 32px;
+}
+.column a{
+    text-decoration: none;
+  color: rgb(179, 179, 179);
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 9px 0px;
+}
+.column a:hover{
+    color: rgb(255, 255, 255);
+text-decoration: underline;
+}
+.c-heading{
+    font-size: 16px;
+    font-weight: 700;
+        padding: 7px 0px;
+}
+.end{
+    color: rgb(124, 124, 124);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+/* copies from chat gpt to make it responsive */
+
+
+/* -------- LAPTOP -------- */
+
+@media (max-width: 1200px){
+
+    .sidebar{
+        width: 28%;
+    }
+
+    .main-content{
+        width: 68%;
+        margin-left: 33%;
+    }
+
+    .search-bar{
+        max-width: 300px;
+    }
+
+}
+
+
+
+/* -------- TABLET -------- */
+
+@media (max-width: 992px){
+
+    nav{
+        padding: 18px;
+    }
+
+    .right a{
+        display: none;
+    }
+
+    .search-bar{
+        max-width: 250px;
+    }
+
+    .sidebar{
+        width: 30%;
+    }
+
+    .main-content{
+        width: 65%;
+        margin-left: 36%;
+    }
+
+    .card img{
+        width: 140px;
+        height: 140px;
+    }
+
+    footer{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+
+/* -------- MOBILE -------- */
+
+@media (max-width: 768px){
+
+    nav{
+        padding: 15px;
+    }
+
+    .search-bar{
+       width: 180px;
+    padding: 6px 12px;
+    }
+
+    .sidebar{
+      width: 35%;
+    }
+
+    .main-content{
+        width: 100%;
+        margin-left: 0; 
+        margin-top: 90px;
+        padding: 10px;
+    }
+
+    .title span{
+        font-size: 20px;
+    }
+
+    .card{
+        padding: 10px;
+    }
+
+    .card img{
+        width: 120px;
+        height: 120px;
+    }
+
+    footer{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+
+/* -------- SMALL MOBILE -------- */
+
+@media (max-width: 480px){
+
+    .logo{
+        width: 2rem;
+    }
+
+    .home-icon{
+        width: 2rem;
+    }
+
+    .login-btn{
+        padding: 8px 18px;
+        font-size: 13px;
+    }
+
+    .signup-btn{
+        font-size: 12px;
+    }
+
+    .title span{
+        font-size: 18px;
+    }
+
+    .card img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .card span{
+        font-size: 14px;
+    }
+
+    .card p{
+        font-size: 12px;
+    }
+
+    .column{
+        padding: 15px 10px;
+    }
+
+}
